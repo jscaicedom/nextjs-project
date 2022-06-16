@@ -1,5 +1,22 @@
 .container {
-  padding: 0 2rem;
+  margin: 4rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.load-button {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.general {
+  width: 100vw;
+  height: 100vh;
+  background: url("../public/background.jpeg") center/cover no-repeat border-box;
+  color: #ffffff;
 }
 
 .main {
