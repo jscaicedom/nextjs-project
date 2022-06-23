@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import classes from '../../styles/MainNavigation.module.css';
+import classes from './main-navigation.module.css';
 import { Navbar, Nav } from 'react-bootstrap';
 
 function MainNavigation() {
@@ -10,6 +10,7 @@ function MainNavigation() {
         <Nav className={`mr-auto ${classes["nav-list"]}`}>
           <Link href="/">Home</Link>
           <Link href="/all-users">Users</Link>
+          <Link href="/reviews">Reviews</Link>
         </Nav>
       </div>
     </Navbar>

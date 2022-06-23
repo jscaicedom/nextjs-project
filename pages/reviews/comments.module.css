@@ -1,0 +1,29 @@
+.container {
+  background: url("../../public/background.jpeg") center/cover no-repeat border-box;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.comments {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 3rem;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.comments button {
+  font: inherit;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+  cursor: pointer;
+}
+
+.comments button:hover,
+.comments button:active {
+  background-color: #7EA6FC;
+  color: #ffffff;
+}

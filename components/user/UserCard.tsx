@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import styles from '../../styles/Card.module.css';
+import styles from './card.module.css';
 import { User } from "../../models/user-info.model";
 import { Card, ListGroup } from "react-bootstrap";
 import ReactCardFlip from 'react-card-flip';
@@ -12,7 +12,6 @@ interface UserCardProps {
 const UserCard: NextPage<UserCardProps> = ( {user} ) => {
 
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
-  console.log(isFlipped)
 
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
@@ -52,22 +51,3 @@ const UserCard: NextPage<UserCardProps> = ( {user} ) => {
 };
 
 export default UserCard;
-
-{/*<Card border="secondary" className={styles['user-card']}>*/
-}
-{/*<Card.Img variant="top" src={user.avatar}/>*/
-}
-{/*<Card.Header>{user.first_name}</Card.Header>*/
-}
-{/*<ListGroup variant="flush">*/
-}
-{/*<ListGroup.Item>{user.email}</ListGroup.Item>*/
-}
-{/*<ListGroup.Item>{user.employment.title}</ListGroup.Item>*/
-}
-{/*<ListGroup.Item>{user.address.city}</ListGroup.Item>*/
-}
-{/*</ListGroup>*/
-}
-{/*</Card>*/
-}

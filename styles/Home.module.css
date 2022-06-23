@@ -1,13 +1,17 @@
 .container {
-  margin: 4rem 6rem;
+  padding: 0 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.body {
+  background: url("../public/background.jpeg") center/cover no-repeat border-box;
+}
+
 .load-button {
   width: 100%;
-  margin: 5rem 0;
+  padding: 5rem 0;
   display: flex;
   justify-content: center;
 }

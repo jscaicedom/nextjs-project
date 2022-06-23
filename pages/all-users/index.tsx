@@ -34,26 +34,27 @@ const AllUsersPage: NextPage<AllUsersProps> = ( {users} ) => {
       <Head>
         <title>All Users</title>
       </Head>
+      <body className={styles.body}>
+        <div className={styles.container}>
+          {data.map(user => (
+              <UserCard
+                key={user.id}
+                user={user}
+              />
+            )
+          )}
+        </div>
 
-      <div className={styles.container}>
-        {data.map(user => (
-            <UserCard
-              key={user.id}
-              user={user}
-            />
-          )
-        )}
-      </div>
-
-      <div className={styles['load-button']}>
-        <Button
-          className="btn btn-outline-success"
-          variant="outline-info"
-          onClick={handleClick}
-        >
-          Load more
-        </Button>
-      </div>
+        <div className={styles['load-button']}>
+          <Button
+            className="btn btn-outline-success"
+            variant="outline-info"
+            onClick={handleClick}
+          >
+            Load more
+          </Button>
+        </div>
+      </body>
     </Fragment>
   );
 };
